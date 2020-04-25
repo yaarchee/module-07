@@ -1,0 +1,220 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    border-style: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    list-style: none;
+
+}
+button{
+    cursor: pointer;
+}
+
+body{
+
+    background-color: white;
+}
+p, ul, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-header{
+    padding-top: 30px;
+}
+.logo-link{
+    display: block;
+}
+.logo-title{
+    color: #fed136;
+    font-family: 'WisdomScript', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+}
+.nav-list__link{
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 41px;
+    text-transform: uppercase;
+    transition: 0.3s color;
+}
+.nav-list__link:hover{
+    color: #fed136;
+}
+
+.main-nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.main-title{
+    margin-bottom: 78px;
+}
+.main-title__head {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 68px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.main-title__body{
+    color: #777777;
+    font-family: 'DroidSerif', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.main-services {
+    padding-top: 93px;
+    padding-bottom: 114px;
+}
+.services-list{
+    display: flex;
+    justify-content: space-between;
+
+}
+.services-list__item{
+    flex-basis: 30%;
+}
+.services-list__logo {
+    margin: 0 auto;
+    width: 69px;
+    height: 69px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 11px;
+}
+.services-list__item:nth-child(1) .services-list__logo{
+    background-image: url("../img/icon/serv1.png");
+}
+.services-list__item:nth-child(2) .services-list__logo{
+    background-image: url("../img/icon/serv2.png");
+}
+.services-list__item:nth-child(3) .services-list__logo{
+    background-image: url("../img/icon/serv3.png");
+}
+.services-list__title {
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.45px;
+    text-align: center;
+}
+.services-list__description {
+    color: #777777;
+    font-family: 'RobotoSlab', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.main-contacts {
+    padding-top: 92px;
+    padding-bottom: 114px;
+    background: #222222 url(../img/icon/map.png) no-repeat right 55px / 699px;
+}
+
+.main-contacts .main-title__head{
+    color: #ffffff;
+}
+.form-contacts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inputs-container{
+    flex-basis: 48%;
+}
+
+.form-contacts__input, .form-contacts__message{
+    width: 100%;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+
+}
+
+.form-contacts__input:last-child{
+    margin-bottom: 0;
+}
+.form-contacts__message{
+    flex-basis: 48%;
+    padding-top: 16px;
+    resize: none;
+    height: 208px;
+
+}
+.form-contacts__input:invalid, .form-contacts__message:invalid{
+    outline-color: red;
+}
+.form-contacts__input:valid, .form-contacts__message:valid{
+    outline-color: green;
+}
+
+
+
+.form-contacts__input::placeholder, .form-contacts__message::placeholder{
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+}
+.form-contacts__buttons{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 44px;
+    display: block;
+    background-color: #fed136;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+}

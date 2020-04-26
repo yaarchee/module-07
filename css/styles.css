@@ -156,12 +156,21 @@ p, ul, h1, h2, h3, h4{
     color: #ffffff;
 }
 .form-contacts{
+
+}
+.wrap-inputs-area{
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.inputs-container{
-    flex-basis: 48%;
+.inputs-container {
+    justify-content: space-between;
+    max-width: 455px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .form-contacts__input, .form-contacts__message{
@@ -173,8 +182,8 @@ p, ul, h1, h2, h3, h4{
     font-size: 14px;
     height: 50px;
     padding-left: 20px;
-    margin-bottom: 30px;
     border-radius: 3px;
+
 
 }
 
@@ -182,8 +191,9 @@ p, ul, h1, h2, h3, h4{
     margin-bottom: 0;
 }
 .form-contacts__message{
-    flex-basis: 48%;
+    max-width: 455px;
     padding-top: 16px;
+    padding-right: 20px;
     resize: none;
     height: 208px;
 

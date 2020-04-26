@@ -65,12 +65,15 @@
           <p class="main-title__body">Proin iaculis purus consequat sem cure. </p>
         </div>
         <form action="#" id="data" class="form-contacts">
-          <div class="inputs-container">
-            <input type="text" name="user-name" class="form-contacts__input" placeholder="your Name *" required>
-            <input type="email" name="user-mail" class="form-contacts__input" placeholder="your e-mail *" required>
-            <input type="text" name="user-subject" class="form-contacts__input" placeholder="subject">
+          <div class="wrap-inputs-area">
+            <div class="inputs-container">
+              <input type="text" name="user-name" class="form-contacts__input" placeholder="your Name *" required minlength="3">
+              <input type="email" name="user-mail" class="form-contacts__input" placeholder="your e-mail *" required>
+              <input type="text" name="user-subject" class="form-contacts__input" placeholder="subject">
+            </div>
+            <textarea name="message" id="message-user" class="form-contacts__message" placeholder="Your message *" required></textarea>
+
           </div>
-          <textarea name="message" id="message-user" class="form-contacts__message" placeholder="Your message *" required></textarea>
 
           <button type="submit" class="form-contacts__buttons" form="data">Send Message</button>
         </form>

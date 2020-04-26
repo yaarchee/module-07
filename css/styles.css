@@ -118,13 +118,13 @@ p, ul, h1, h2, h3, h4{
     background-position: center;
     margin-bottom: 11px;
 }
-.services-list__item:nth-child(1) .services-list__logo{
+.commerce{
     background-image: url("../img/icon/serv1.png");
 }
-.services-list__item:nth-child(2) .services-list__logo{
+.web{
     background-image: url("../img/icon/serv2.png");
 }
-.services-list__item:nth-child(3) .services-list__logo{
+.security{
     background-image: url("../img/icon/serv3.png");
 }
 .services-list__title {

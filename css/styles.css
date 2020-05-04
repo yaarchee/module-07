@@ -198,10 +198,10 @@ p, ul, h1, h2, h3, h4{
     height: 208px;
 
 }
-.form-contacts__input:invalid, .form-contacts__message:invalid{
+.form-contacts__input:invalid:not(:placeholder-shown), .form-contacts__message:invalid:not(:placeholder-shown){
     outline-color: red;
 }
-.form-contacts__input:valid, .form-contacts__message:valid{
+.form-contacts__input:valid:not(:placeholder-shown), .form-contacts__message:valid:not(:placeholder-shown){
     outline-color: green;
 }
 
